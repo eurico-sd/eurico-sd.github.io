@@ -1,0 +1,60 @@
+:root {
+    --foreground-color: #ECDFCC;
+    --background-color: #1E201E;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/ibmplex_mono_700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/ibmplex_mono_400.woff2') format('woff2');
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.centre {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--foreground-color);
+    text-align: center;
+    width: 80%;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 25px;
+    white-space: pre-wrap;
+    line-height: 2;
+}
+
+a {
+    color: inherit;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+h1 a {
+    text-decoration: none;
+}
